@@ -1,0 +1,971 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Afacad", sans-serif;
+
+}
+body{
+    padding-top: 90px;
+}
+header{
+    background-color: bisque;
+    border-bottom: 5px dotted ;
+    display: flex;
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: flex-end;
+}
+.labeling{
+    font-size: 20px;
+    margin: 0px 20px;
+    margin-left:10px ;
+
+}
+.fixed {
+    position: fixed;
+    margin-top:-90px;
+    z-index: 9000;
+    
+}
+.logo-container{
+    position: absolute;
+    margin-bottom:30px ;
+    left: 0;
+}
+.nav_buscadr{
+    display: inline-flex;
+    position: relative;
+    margin-left: 100px;
+}
+.nav_buscadr img{
+    width: 15px;
+    background-color: rgb(202, 172, 211);
+    padding: 10px;
+    border-radius: 60px;
+    margin-top: 39px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+.nav_buscadr input{
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 1px;
+    border-radius: 10px;
+}
+input::placeholder{
+    color:rgb(176, 9, 9);
+    padding-left: 5px;
+}
+input:focus{
+    background-color: darkcyan;
+    transition: 1s;
+}
+h2::selection{
+    background-color: aquamarine;
+}
+.logo-container  img {
+    width: 70px;
+    margin: 7px 20px;
+    background-color: rgb(202, 172, 211);
+    padding: 10px;
+    border-radius: 50px;
+
+
+}
+.nav_buscadr li, .nav_buscadr-responsive li{
+ list-style: none;
+}
+.nav_buscadr-responsive{
+    margin-left: 200px;
+    display: inline-flex;
+
+}
+.nav-bar-container{
+    display: flex; /*el usar el display:flex, nos ayuda a colocar las cajas de maner a horizontal*/
+
+}
+.nav__ul li {
+    display: inline-block;
+    padding: 30px;
+    margin-top: -10px;
+}
+.nav-li{
+    display: inline-block;
+    padding-top: 20px;
+    position: relative;
+    top:8px;
+}
+.logo-container-responsive  img {
+    width: 70px;
+    margin: 7px 20px;
+    background-color: rgb(202, 172, 211);
+    padding: 10px;
+    border-radius: 50px;
+
+
+}
+.nav_buscadr-responsive{
+    display: inline-flex;
+    margin-left: 20px;
+}
+.nav_buscadr-responsive img{
+    width: 15px;
+    background-color: rgb(202, 172, 211);
+    padding: 10px;
+    border-radius: 60px;
+    margin-top: 39px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+.nav_buscadr-responsive input{
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 0px;
+    border-radius: 10px;
+}
+.nav-li-re{
+
+    display: inline-block;
+    position: relative;
+    top:15px;
+
+}
+.container_responsive{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 550px;
+    height: 100vh;
+    z-index: 999;
+    backdrop-filter:blur(10px); /* el backdrop-filter va de la mano del background-color apara causar un mejor efecto*/
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.2); /*la sombra del cuadro responsable*/
+
+    flex-direction: column;
+
+    align-items: flex-start; /*donde se mostrara el contenido en eje  X*/
+    justify-content: flex-start; /*donde se mostrara el contenido  en eje Y*/
+
+
+}
+.container_responsive ul{
+    display: flex;
+    flex-direction: column;
+}
+.container_responsive li {
+    width: 100%;
+}
+
+.container_responsive a {
+    width: 100%;
+}
+
+.nav-lis{
+    display: inline-block;
+    padding: 12px;
+}
+.nav-lis-responsive:hover >a{
+    color:rgb(231, 218, 218);
+    font-size: bold;
+    text-decoration: underline;
+}
+.nav-lis:hover >a{
+    color:rgb(231, 218, 218);
+    font-size: bold;
+}
+.nav-lis a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+.nav-lis-responsive a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.nav-li a{
+    color: rgb(242, 240, 240);
+    text-decoration: none;
+    padding: 0px 10px;
+}
+.nav-lis-responsive:hover, .nav-lis:hover{
+    background-color: gray;
+    padding: 30px 30px;
+    font-size: bold;
+    border-radius: 10px;
+}
+
+/*primera pagina (PRINCIPAL)*/
+.INICIO img, .cakesSection img{
+    height: 680px;
+    width: 100%;
+    object-fit: cover;
+    opacity: .9;
+}
+.INICIO{
+    position: relative;
+}
+
+.welcome{
+    border-bottom: 6px solid deeppink;
+    margin: 80px auto;
+    border-radius: 4px;
+    background-color: transparent;
+    color:black;
+    text-shadow: 5px 3px 8px rgb(246, 241, 241);
+    padding: 0px;
+    position: relative;
+    z-index: 1000;
+    font-size: 100px;
+    width: 800px;
+    transition: all 2s;
+    z-index: 3;
+}
+.dos{
+    position: absolute;
+    top: 40%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%);
+    z-index: 2px;
+}
+.buttonC{
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+}
+.conocenosb{
+    background-color: rgb(227, 241, 241);
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px groove gray;
+}
+.buttonC a{
+    text-decoration: none;
+    color: rgb(224, 141, 155);
+}
+.buttonC a:hover{
+    background-color: blanchedalmond;
+    color: black;
+    font-weight: 700;
+
+}
+/*INICIO DE LA PAGINA 2 */
+.aboutUs{
+    position: relative;
+}
+.fondoPastel1{
+    height: 700px;
+    width: 100%;
+    opacity: .9;
+    background-color:  rgb(238, 218, 234);
+}
+.cakesSection{
+    position: relative;
+}
+
+.bienvenida{
+    position: absolute;
+    background-color: lightpink;
+    color:rgb(0, 0, 0);
+    border: 5px ridge deeppink;
+    border-radius: 6px;
+    box-shadow: 10px 10px 10px gray ;
+    width: 400px;
+    padding: 15px;
+    margin-top: -500px ;
+    right: 8%;
+    
+
+}
+.tortaAst {
+    position: absolute;
+    border: 3px groove rgb(105, 181, 252);
+    border-radius:30px ;
+    margin-top: -610px ;
+    left: 3%;
+    margin-right: 950px;
+    width: 200px;
+    z-index: 1;
+    width: 300px;
+    height:400px;
+    box-shadow: 15px 10px 10px rgb(154, 208, 227) ;
+}
+.tortaCora{
+    position: absolute;
+    border: 3px groove rgb(252, 111, 111);
+    border-radius:30px ;
+    margin-top: -410px ;
+    left: 18%;
+    margin-right: 950px;
+    z-index: 3;
+    width: 280px;
+    opacity: .89;
+    height:300px;
+    box-shadow: inset;
+    box-shadow: 15px 10px 10px rgb(235, 142, 142) ;
+}
+.tortaCere{
+    position: absolute;
+    border: 3px groove rgb(179, 225, 165);
+    border-radius:25px ;
+    margin-top: -550px ;
+    left: 30%;
+    margin-right: 950px;
+    width: 200px;
+    z-index: 2;
+    width: 230px;
+    height:300px;
+    box-shadow: inset;
+    box-shadow: 15px 10px 10px rgb(200, 237, 185) ;
+}
+.star1{
+    position: absolute;
+    margin-top: -550px ;
+    right: 38%;
+    z-index: 10;
+    width: 40px;
+    height:50px;
+}
+.star2{
+    position: absolute;
+    margin-top: -200px ;
+    right: 10%;
+    z-index: 10;
+    width: 40px;
+    height:50px;
+}
+.star3{
+    position: absolute;
+    margin-top: -290px ;
+    right: 3%;
+    z-index: 10;
+    width: 40px;
+    height:50px;
+}
+.Spam1{
+    position: absolute;
+    padding: 10px;
+    border: 3px dashed black;
+    border-radius: 5px;
+    margin-top: -85px;
+    right: 30%;
+    backdrop-filter:blur(100px); /* el backdrop-filter va de la mano del background-color apara causar un mejor efecto*/
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+/*PAGINA 03*/
+.fondoPastel2{
+    height: 700px;
+    width: 100%;
+    opacity: .9;
+    background-color:  rgb(218, 236, 238);
+}
+.title_cakeSection{
+    z-index: 2;
+    position: absolute;
+    left: 34%;
+    top:13%;
+    background-color: lightpink;
+    border: 2px groove red;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 3s;
+}
+.tortas{
+    position: absolute;
+    display: inline-flex;
+    margin-top: 120px;
+    top: 40%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%);
+    z-index: 2px;
+}
+.torta1, .torta2, .torta3, .torta4{
+    color: rgb(154, 100, 1);
+    font-weight: 100 ;
+    padding: 10px;
+    margin: 10px;
+    border: 4px groove salmon;
+    border-radius: 8px;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 2px 3px 2px gray;
+    position: relative;
+    text-align: center;
+    width: 260px;
+    height: 430px;
+    transition: all 3s;
+
+}
+.torta1 img, .torta2 img, .torta3 img , .torta4 img{
+    height: 260px;
+    width: 240px;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    border-radius: 20px;
+    cursor: grab;
+
+}
+.torta1 button, .torta2  button, .torta3  button, .torta4  button{
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    background-color: rgb(246, 198, 226);
+
+}
+.torta1 button:hover, .torta2 button:hover, .torta3 button:hover, .torta4 button:hover{
+    background-color: white;
+    font-weight:  bold;
+    transition: all 1s;
+}
+.flores{
+    position: absolute;
+    left: -6.5%;
+    margin-top: 38px;
+    z-index: 20;
+    transform: all 4s;
+}
+.flor1 {
+    position: absolute;
+    margin-top: -660px ;
+    margin-left: 540px;
+    width: 30px;
+    height:30px;
+}
+.flor2 {
+    position: absolute;
+    margin-top: -635px ;
+    margin-left: 540px;
+    width: 20px;
+    height:20px;
+}
+.flor3 {
+    position: absolute;
+    margin-top: -660px ;
+    margin-left: 565px;
+    width: 20px;
+    height:20px;
+}
+/*PAGINA 04*/
+.Video{
+    position: relative;
+}
+.fondoPastel3{
+    width: 100%;
+    background-color: rgb(248, 246, 171);
+    height: 700px;
+    opacity: .9;
+    position: static;
+}
+.audioInfo-title{
+    position: absolute;
+    font-weight: 100 ;
+    padding: 20px 20px;
+    border-bottom: 3px groove gray;
+    background-color: lightgray;
+    box-shadow: 5px 6px 10px gray;
+    text-align: center;
+    margin-top: -650px;
+    left: 0%;
+    transition: all 3s;
+}
+.audioInfo-video{
+    position: absolute;
+    padding: 20px 20px;
+    box-shadow: 5px 6px 10px gray;
+    margin-top: -500px;
+    left: 10%;
+    transition: all 3s;
+}
+.audioInfo-cake1{
+    position: absolute;
+    right: 10%;
+    top: 60%;
+    border-radius: 150px;
+    box-shadow: 10px 15px 10px rgb(109, 147, 110);
+    z-index: 1;
+    width: 200px;
+    height:200px;
+    transition: all 3s;
+}
+.audioInfo-cake2{
+    position: absolute;
+    box-shadow: 10px 10px 10px rgb(109, 147, 110);
+    right: 15%;
+    top: 25%;
+    border-radius: 20px;
+    width: 280px;
+    height:380px;
+    transition: all 3s;
+}
+/*PAGINA 05*/
+
+.fondoPastel4{
+    width: 100vw;
+    background-color: rgb(193, 243, 236);
+    height: 700px;
+    opacity: .9;
+    position: static;
+}
+.SaberMas{
+    margin-bottom: 40px;
+    position: relative;
+    padding: 10px;
+}
+.SaberMas-cat{
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    margin-top: -540px;
+    margin-left: 10%;
+    cursor: grab;
+    transition: all 3s;
+}
+.SaberMas-cat img{
+    height: 300px;
+    box-shadow: 5px 6px 10px gray;
+}
+.encaje{
+    width: 600px;
+    height: 300px;
+    margin-top: -300px;
+    position: absolute;
+    right: 5%;
+    box-shadow: 5px 6px 10px gray;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255,255,255,0.1);
+    text-align: center;
+}
+.encaje h3{
+    margin: 20px;
+}
+.encaje p{
+    margin: 5px;
+}
+.form{
+    margin:  10px 150px;
+}
+.form label{
+    margin:10px;
+}
+.form input{
+    width: 200px;
+    margin-bottom: 5px;
+}
+.form .envio {
+    height: 28px;
+    margin: 20px;
+    width: 100px;
+}
+.florL1 {
+    position: absolute;
+    margin-top: -42px;
+    right: 4%;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+}
+.florL2 {
+    position: absolute;
+    margin-top: -42px;
+    left: 9%;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+}
+.florL3 {
+    visibility: hidden;
+    position: absolute;
+    width: 80px;
+    left: 5%;
+}
+.tulip1 {
+    position: absolute;
+    margin-top: -348px;
+    right: 5%;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+}
+.tulip2 {
+    position: absolute;
+    margin-top: -348px;
+    right: 10%;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+}
+.SaberMas-cat img:active{
+    transition: all 3s;
+    width: 500px;
+    height: 500px;
+
+}
+@media (max-width: 1266px) {
+    .audioInfo-title{
+        font-size: 15px;
+    }
+    .audioInfo-video{
+        height: 250px;
+        width: 450px;
+        left: 5%;
+        padding: 20px 10px ;
+
+    }
+    .audioInfo-cake1{
+        right: 3%;
+        top: 60%;
+        width: 150px;
+        height:150px;
+    }
+    .audioInfo-cake2{
+        right: 8%;
+        top: 25%;
+        width: 230px;
+        height:330px;
+    }
+    .flores{
+        left: -11%;
+        margin-top: 8px;
+        z-index: 20;
+    }
+    .tortas{
+        position: absolute;
+        display: block;
+        top: auto;
+        margin-top: -300px;
+    }
+    .torta1, .torta2, .torta3, .torta4{
+        width: 500px;
+        height: 100px;
+        left: 20%;
+        top: 50%;
+    
+    }
+    .torta1 img, .torta2 img, .torta3 img , .torta4 img{
+        position: absolute;
+        height: 130px;
+        width: 110px;
+        cursor: grab;
+    }
+    .torta1 img{
+        left: -20%;
+        top: -15%;
+    }
+    .torta2 img{
+        left: -20%;
+        top: -15%;
+    }
+    .torta3 img{
+        left: -20%;
+        top: -15%;
+    }
+    .torta4 img{
+        left: -20%;
+        top: -15%;
+    }
+    .title_cakeSection{
+        top:8%;
+    }
+    
+
+    
+}
+@media only screen and (max-width:789px) {
+    .SaberMas-cat{
+        margin-top: -540px;
+        margin-left: 12%;
+    }
+    .SaberMas-cat img{
+        margin-top: -300px;
+        height: 100px;
+    }
+    .audioInfo-title{
+        font-size: 15px;
+    }
+    .audioInfo-video{
+        height: 150px;
+        width: 250px;
+        left: 20%;
+        padding: 10px 10px ;
+        top:95%;
+
+    }
+    .audioInfo-cake1{
+        left:15%;
+        top: 75%;
+        width: 150px;
+        height:150px;
+    }
+    .audioInfo-cake2{
+        right: 8%;
+        top: 55%;
+        width: 180px;
+        height:280px;
+    }
+    .flores{
+        margin-left: -460px;
+        margin-top: 8px;
+        z-index: 20;
+    }
+
+    .torta1, .torta2, .torta3, .torta4{
+        font-size: 12px;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        width: 220px;
+        height: 90px;
+        left: 10%;
+        top: 50%;
+
+    }
+    .torta1 img, .torta2 img, .torta3 img , .torta4 img{
+        height: 80px;
+        width: 70px;
+        margin: auto;
+        border-radius: 20px;
+        top:-1%;
+        left: -25%;
+    }
+    .torta1 button, .torta2  button, .torta3  button, .torta4  button{
+        margin-top: 10px;
+        font-size: 10px;
+        height: 20px;
+        width: 60px;
+        background-color: rgb(246, 198, 226);
+    }
+    .title_cakeSection{
+        font-size: 16px;
+        top:10%;
+        left: 15%;
+    }
+}
+@media (max-width: 570px) {
+    .encaje {
+        width: 300px;
+        height: 400px;
+        margin-top: -300px;
+        position: absolute;
+        left: 10%;
+        font-size: 11px;
+    }
+    .form {
+        margin: 10px 60px;
+    }
+    .tulip1{
+        position: absolute;
+        margin-top: -348px;
+        left:  8%;
+        z-index: 10;
+        width: 60px;
+        height: 60px;
+    }
+    .tulip2 {
+        position: absolute;
+        margin-top: -348px;
+        left: 12%;
+        z-index: 10;
+        width: 60px;
+        height: 60px;
+    }
+    .florL1{
+        margin-top: 70px;
+        right: 9%;
+        z-index: 10;
+        width: 40px;
+        height: 40px;
+    }
+    .florL2{
+        margin-top: 70px;
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width:345px) {
+    .encaje {
+        width: 230px;
+        height: 400px;
+    }
+    .form {
+        margin: 10px 18px;
+    }
+    .SaberMas-cat{
+        width: 0px;
+
+    }
+    .audioInfo-video{
+        height: 100px;
+        width: 200px;
+        left: 10%;
+    }
+}
+@media (max-width: 1266px){
+    .nav__ul .nav-lis-responsive, .nav_buscadr {
+        display: none ;
+    }
+    .bienvenida{
+        width: 300px;
+        transition: all 2s;
+    }
+    .star2{
+        margin-top: -130px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .bienvenida{
+        right: 30%;
+        font-size: 13px;
+        margin-top: -400px;
+    }
+    .tortaAst{
+        margin-top: -670px;
+        width: 180px;
+        height: 250px;
+        transition: all 2s;
+    }
+    .tortaCere{
+        margin-top: -670px;
+        width: 180px;
+        height: 250px;
+        margin-right: 0px;
+        right: 5%;
+        left: auto;
+        transition: all 2s;
+    }
+    .tortaCora{
+        margin-top: -580px;
+        width: 150px;
+        height: 150px;
+        margin-right: 0px;
+        right: 40%;
+        left: auto;
+        transition: all 2s;
+    }
+    .star1{
+        right: 47%;
+        margin-top: -640px ;
+        width: 30px;
+        height:40px;
+        transition: all 2s;
+    }
+    
+}
+
+@media only screen and (max-width: 805px){
+    .container_responsive{
+        width: 100%;
+    }
+    .welcome{
+        margin:  80px auto;
+        font-size: 50px;
+        width: 400px;
+        transition: all 2s;
+    }
+    .buttonC{
+        font-size: 12px;
+        width: 100px;
+        transition: all 3s;
+        top:50%;
+    }
+
+}
+@media only screen and (max-width: 500px){
+    .fixed{
+        height: 90px;
+        width: 100%;
+    }
+    .labeling{
+        margin: 0px -10px;
+    }
+    .bienvenida{
+        left: 25%; 
+        font-size: 11px;
+        width: 200px;
+    }
+    .Spam1{
+        left: 23%; 
+        font-size: 11px;
+        width: 240px;
+    }
+    .tortaAst{
+        margin-top: -670px;
+        width: 130px;
+        height: 200px;
+        left: 15%;
+        transition: all 2s;
+    }
+    .tortaCere{
+        margin-top: -670px;
+        width: 130px;
+        height: 200px;
+        margin-right: 0px;
+        right: 20%;
+        left: auto;
+        transition: all 2s;
+    }
+    .tortaCora{
+        margin-top: -580px;
+        width: 150px;
+        height: 150px;
+        margin-right: 0px;
+        right: 36%;
+        left: auto;
+        transition: all 2s;
+    }
+    .star3{
+        width: 30px;
+        height:40px;
+        left: 15%;
+        margin-top: -400px;
+    }
+
+}
+@media only screen and (max-width: 415px){
+    .container_responsive{
+        width: 100%;
+
+    }
+    .fondoPastel1{
+        width: 100%;
+    }
+    .welcome{
+        margin:  80px auto;
+        font-size: 30px;
+        width: 230px;
+        transition: all 2s;
+    }
+    .buttonC{
+        font-size: 10px;
+        width: 80px;
+        transition: all 3s;
+        top:48%;
+    }
+    .Spam1{
+        left: 13%; 
+        width: 230px;
+        transition: all 2s;
+    }
+    .star3{
+        width: 30px;
+        height:40px;
+        left: 12%;
+        margin-top: -420px;
+    }
+    .bienvenida{
+        left: 15%; 
+        font-size: 11px;
+        width: 200px;
+    }
+
+}
